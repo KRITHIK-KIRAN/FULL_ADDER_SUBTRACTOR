@@ -37,10 +37,10 @@ A full subtractor is a combinational circuit that performs subtraction involving
 
 Diff = A ⊕ B ⊕ Bin 
 
-Borrow out = A'Bin + A'B + BBin
+Borrow out = A'Bin + A'B + BBin.
 **Procedure**
 
-Write the detailed procedure here
+Write the detailed procedure here.
 Full Adder:
 Program:
 ```
@@ -64,7 +64,7 @@ Rtl:
 <img width="904" height="308" alt="image" src="https://github.com/user-attachments/assets/164344cd-50df-4694-a07f-2acdb80f965f" />
 
 Output:
-<img width="1027" height="699" alt="image" src="https://github.com/user-attachments/assets/c67a12cd-93aa-49d6-829d-f40d83b41367" />
+<img width="1034" height="574" alt="image" src="https://github.com/user-attachments/assets/77205060-ebec-4c99-a21d-0757a1757a78" />
 
 Full Subtractor:
 
