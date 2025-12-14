@@ -37,11 +37,14 @@ A full subtractor is a combinational circuit that performs subtraction involving
 
 Diff = A ⊕ B ⊕ Bin 
 
-Borrow out = A'Bin + A'B + BBin.
+Borrow out = A'Bin + A'B + BBin
+
 **Procedure**
 
 Write the detailed procedure here.
+
 Full Adder:
+
 Program:
 ```
 module fa1_df(sum, cout, a, b, cin);
