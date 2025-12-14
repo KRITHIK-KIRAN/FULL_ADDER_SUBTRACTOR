@@ -26,6 +26,30 @@ Carry = AB + ACin + BCin
 
 **Figure -1 FULL ADDER**
 
+Program:
+```
+module fa1_df(sum, cout, a, b, cin);
+    output sum;
+    output cout;
+    input a;
+    input b;
+    input cin;
+
+	 wire w1,w2,w3;
+	 assign w1=a^b;
+	 assign w2=a&b;
+	 assign w3=w1&cin;
+	 assign sum=w1^cin;
+	 assign cout=w2|w3;
+endmodule
+```
+
+Rtl:
+<img width="904" height="308" alt="image" src="https://github.com/user-attachments/assets/164344cd-50df-4694-a07f-2acdb80f965f" />
+
+Output:
+<img width="1027" height="699" alt="image" src="https://github.com/user-attachments/assets/c67a12cd-93aa-49d6-829d-f40d83b41367" />
+
 **Full Subtractor**
 
 A full subtractor is a combinational circuit that performs subtraction involving three bits, namely minuend, subtrahend, and borrow-in . It accepts three inputs: minuend, subtrahend and a borrow bit and it produces two outputs: difference and borrow.
