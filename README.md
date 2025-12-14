@@ -26,6 +26,22 @@ Carry = AB + ACin + BCin
 
 **Figure -1 FULL ADDER**
 
+
+**Full Subtractor**
+
+A full subtractor is a combinational circuit that performs subtraction involving three bits, namely minuend, subtrahend, and borrow-in . It accepts three inputs: minuend, subtrahend and a borrow bit and it produces two outputs: difference and borrow.
+
+![image](https://github.com/naavaneetha/FULL_ADDER_SUBTRACTOR/assets/154305477/02b24f51-ab51-4304-9ad6-7b81ffc1ead5)
+
+
+
+Diff = A ⊕ B ⊕ Bin 
+
+Borrow out = A'Bin + A'B + BBin
+**Procedure**
+
+Write the detailed procedure here
+Full Adder:
 Program:
 ```
 module fa1_df(sum, cout, a, b, cin);
@@ -50,30 +66,27 @@ Rtl:
 Output:
 <img width="1027" height="699" alt="image" src="https://github.com/user-attachments/assets/c67a12cd-93aa-49d6-829d-f40d83b41367" />
 
-**Full Subtractor**
+Full Subtractor:
 
-A full subtractor is a combinational circuit that performs subtraction involving three bits, namely minuend, subtrahend, and borrow-in . It accepts three inputs: minuend, subtrahend and a borrow bit and it produces two outputs: difference and borrow.
+Program:
+```
+module fullsub(df, bo, a, b, bin);
+    output df;
+    output bo;
+    input a;
+    input b;
+    input bin;
+endmodule
+```
 
-![image](https://github.com/naavaneetha/FULL_ADDER_SUBTRACTOR/assets/154305477/02b24f51-ab51-4304-9ad6-7b81ffc1ead5)
+Rtl:
+<img width="1002" height="655" alt="image" src="https://github.com/user-attachments/assets/89517bfa-293b-4001-b15d-1a2bab23b56e" />
 
-Diff = A ⊕ B ⊕ Bin 
+Outpu:
+<img width="1027" height="574" alt="image" src="https://github.com/user-attachments/assets/f4fead91-0e55-48d0-a02e-78e9f0297e37" />
 
-Borrow out = A'Bin + A'B + BBin
 
-**Truthtable**
 
-**Procedure**
-
-Write the detailed procedure here
-
-**Program:**
-
-/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
-*/
-
-**RTL Schematic**
-
-**Output Timing Waveform**
 
 **Result:**
 
