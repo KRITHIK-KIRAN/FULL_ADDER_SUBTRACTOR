@@ -73,12 +73,19 @@ Full Subtractor:
 
 Program:
 ```
-module fullsub(df, bo, a, b, bin);
-    output df;
-    output bo;
+module mod(sum, cout, a, b, cin);
+    output c;
+    output d;
     input a;
     input b;
-    input bin;
+    input e;
+
+	 wire w1,w2,w3;
+	 assign w1=a^b;
+	 assign w2=~a&b;
+	 assign w3=~w1&e;
+	 assign c=w1^e;
+	 assign d=w2|w3;
 endmodule
 ```
 
